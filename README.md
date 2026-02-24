@@ -105,3 +105,12 @@ tail -f ~/Library/Logs/daily-report.log
 ## License
 
 MIT
+
+## トークン消費量
+
+**想定消費量（2026-02-25時点）:**
+- 1回あたり: 約65,000トークン（出力最適化適用後）
+- 実行頻度: 平日毎日（月20営業日）
+- 月間合計: 約130万トークン（Opus 4.6の月間制限2000万トークンの6.5％）
+
+詳細は [TOKEN-OPTIMIZATION-v2.md](TOKEN-OPTIMIZATION-v2.md) を参照。

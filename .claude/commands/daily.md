@@ -19,7 +19,7 @@ allowed-tools:
 
 Task toolで以下のsubagentを起動する:
 - **subagent_type**: general-purpose
-- **model**: sonnet
+- **model**: sonnet  # 品質重視: sonnet（~60kトークン）、コスト重視: haiku（~20kトークン）
 - **prompt**: 以下のテキストを渡す（{TODAY}は実際の日付に置換）
 
 ```

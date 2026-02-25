@@ -25,11 +25,15 @@ Claude Code の `/daily` コマンドで、Slack・Notion・Google Calendar・Co
 
 ## セットアップ
 
+### クイックスタート
 ```bash
 git clone https://github.com/rikogohda-cloud/claude-daily-report.git
 cd claude-daily-report
 bash setup.sh
 ```
+
+### 詳細なセットアップ手順
+**[SETUP-GUIDE.md](SETUP-GUIDE.md) を参照**してください。削除された場合の復元手順、トラブルシューティングも記載されています。
 
 `setup.sh` が対話的に以下を聞いて、ファイルを配置します:
 
@@ -114,3 +118,19 @@ MIT
 - 月間合計: 約130万トークン（Opus 4.6の月間制限2000万トークンの6.5％）
 
 詳細は [TOKEN-OPTIMIZATION-v2.md](TOKEN-OPTIMIZATION-v2.md) を参照。
+
+## ドキュメント
+
+- **[SETUP-GUIDE.md](SETUP-GUIDE.md)**: セットアップ完全ガイド（復元手順、トラブルシューティング含む）
+- **[TOKEN-OPTIMIZATION-v2.md](TOKEN-OPTIMIZATION-v2.md)**: トークン最適化設計と最終決定
+- **[CHANGELOG.md](CHANGELOG.md)**: 変更履歴
+
+## 削除された場合の復元
+
+```bash
+cd ~/repos/claude-daily-report
+git pull origin master
+bash setup.sh
+```
+
+詳細は [SETUP-GUIDE.md](SETUP-GUIDE.md) の「復元手順」を参照。
